@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Factorization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Number Factorization</h1>
+        <input type="text" id="numberInput" placeholder="Enter a number">
+        <button onclick="factorize()">Factor</button>
+
+        <div class="results" id="pollardP1Result">
+            <p>Pollard P-1 Result: <span id="pollardP1Value"></span></p>
+        </div>
+        <div class="results" id="pollardRhoResult">
+            <p>Pollard Rho Result: <span id="pollardRhoValue"></span></p>
+        </div>
+        <div class="results" id="quadraticSieveResult">
+            <p>Quadratic Sieve Result: <span id="quadraticSieveValue"></span></p>
+        </div>
+        <!-- <div class="results" id="numberFieldSieveResult"></div> -->
+    </div>
+
+    <script src="script.js"></script>
+    <script src="pollardP1.js"></script>
+    <script src="pollardRho.js"></script>
+    <script src="quadraticSieve.js"></script>
+    <script src="numberFieldSieve.js"></script>
+</body>
+
+</html>
